@@ -5,7 +5,7 @@ const path = require('path')
 module.exports = app => {
     let config = app.config.bookshelf
     app.bookshelf = Bookshelf(
-        Knex(config.knex)
+        Knex({...config.knex, debug: config.debug})
     )
 
     if (config.plugins) {

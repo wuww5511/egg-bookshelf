@@ -3,5 +3,6 @@
 exports.bookshelf = {
     knex: {},
     baseDir: 'model',
-    plugins: []
+    plugins: [],
+    debug: false
 };
